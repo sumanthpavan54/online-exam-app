@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VALIDATION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body style="background-color:Bisque;>
+    <div class="jumbotron">
+      <div class="container">
+        <h2>VALIDATION FORM</h2>
+        <form method="post">
+          {%csrf_token%}
+          USERNAME :&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="text" name="username" value="{{employee.username}}"><br><br>
+          SIXTHANSWER :&nbsp &nbsp &nbsp <input type="text" name="sixthquestionanswer" value="{{employee.sixthquestionanswer}}"><br><br>
+          SIXTHMARKS :&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="sixthquestionmarks" value="{{employee.sixthquestionmarks}}"><br><br>
+          SEVENTHANSWER :<input type="text" name="seventhquestionanswer" value="{{employee.seventhquestionanswer}}"><br><br>
+          SEVENTHMARKS :&nbsp &nbsp<input type="text" name="seventhquestionmarks" value="{{employee.seventhquestionmarks}}"><br><br>
+          EIGHTANSWER :&nbsp &nbsp &nbsp<textarea name="eigthquestionanswer" rows="2" cols="30">{{employee.eigthquestionanswer}}</textarea><br><br>
+          EIGTHMARKS :&nbsp &nbsp &nbsp &nbsp<textarea name="eigthquestionmarks" rows="2" cols="30">{{employee.eigthquestionmarks}}</textarea><br><br>
+          NINTHANSWER :&nbsp &nbsp &nbsp<textarea name="ninthquestionanswer" rows="2" cols="30">{{employee.eigthquestionanswer}}</textarea><br><br>
+          NINTHMARKS :&nbsp &nbsp &nbsp &nbsp <textarea name="ninthquestionmarks" rows="2" cols="30">{{employee.eigthquestionmarks}}</textarea><br><br>
+          TOTALMARKS:&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="totalmarks" value="{{employee.totalmarks}}"><br><br>
+          PERCENTAGE:&nbsp &nbsp &nbsp &nbsp &nbsp<input type="text" name="percentage" value="{{employee.percentage}}">
+          <br><br>
+          <input type="submit" name="" class="btn btn-primary"value="UPDATE">
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

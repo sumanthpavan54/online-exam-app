@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%extends 'examapp2/base2.html'%}
+{%block body2_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h2>How machine learning will impact the it sector?</h2>
+    <br>
+    <form method="post" action="/Eigthquestion/">
+      {%csrf_token%}
+      <h3>Answer</h3><textarea name="eigthanswer" rows="15" cols="50">Enter your answer</textarea>
+      <br>
+      <br>
+      <input type="submit" class="btn btn-primary" name="" value=submit>
+    </form>
+  </div>
+</div>
+
+{%endblock%}

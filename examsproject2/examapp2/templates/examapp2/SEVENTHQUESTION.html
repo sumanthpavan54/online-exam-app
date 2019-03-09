@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'examapp2/base2.html'%}
+{%block body2_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h2>How many players will be in volleyball?</h2>
+    <br>
+    <h3>1 11</h3>
+    <h3>2 12</h3>
+    <h3>3 9</h3>
+    <h3>4 6</h3>
+    <br>
+    <form method="post" action="/Seventhquestion/">
+      {%csrf_token%}
+      <h3>Answer</h3> <input type="text" name="seventhanswer">
+      <br>
+      <br>
+      <input type="submit" class="btn btn-primary" name="" value=submit>
+    </form>
+  </div>
+</div>
+
+{%endblock%}

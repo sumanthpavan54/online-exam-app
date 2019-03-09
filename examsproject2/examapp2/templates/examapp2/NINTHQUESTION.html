@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%extends 'examapp2/base2.html'%}
+{%block body2_block%}
+<div class="container">
+  <div class="jumbotron">
+    <h2>What is Artificial Intellegence?</h2>
+    <br>
+    <form method="post" action="/Ninthquestion/">
+      {%csrf_token%}
+      <h3>Answer</h3><textarea name="ninthanswer" rows="15" cols="50">Enter your answer here</textarea>
+      <br>
+      <br>
+      <input type="submit" class="btn btn-primary" name="" value=submit>
+    </form>
+  </div>
+</div>
+
+{%endblock%}
